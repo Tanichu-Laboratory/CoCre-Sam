@@ -22,7 +22,7 @@ pip install -r requirements.txt
 The main simulation program is located at:
 
 ```
-src/main.py
+python src/main.py
 ```
 
 ## ✨ Main Contributions
