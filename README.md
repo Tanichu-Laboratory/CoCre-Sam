@@ -16,9 +16,14 @@ We theoretically prove that the collective motion of the shared pointer (planche
 
 ## 🚀 Running the Simulation
 
+```
+pip install -r requirements.txt
+```
 The main simulation program is located at:
 
+```
 src/main.py
+```
 
 ## ✨ Main Contributions
 
