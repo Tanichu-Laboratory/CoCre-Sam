@@ -7,7 +7,7 @@ import os
 scale = 1
 num_sample = 100000
 
-random.seed(7)
+random.seed(82)
 
 N = 6
 
@@ -109,10 +109,10 @@ class Agent_two:
         
             e1 += probs1 * scores + probs2 * scores
 
-        return e1, probabilities1, probabilities2
+        return e1, probabilities1, probabilities2, scores
 
     def get_action(self, position, current_context_ngram):
-        e1, probs1, probs2 = self.gradient_energy(position, current_context_ngram)
+        e1, probs1, probs2, scores = self.gradient_energy(position, current_context_ngram)
         noise1 = np.sqrt(num_agent * 2 * self.D) * np.random.randn(2)
         
         action1 = - self.eta * e1 + noise1
